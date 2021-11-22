@@ -6,6 +6,7 @@
   border-radius: 5px;
   font-weight: bold;
   border: none;
+  transition: .5s;
 
   &:hover {
     background-color: $text_brand_secondary;
@@ -19,4 +20,8 @@
 .type_h2 {
   font-size: $font_size_h2;
   font-family: $font_headings;
+}
+
+.heading_grey {
+  color: $text_titles;
 }

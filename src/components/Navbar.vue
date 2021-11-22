@@ -102,6 +102,7 @@ export default {
   nav {
     margin-bottom: $padding_m;
   }
+  
   .logo {
     width: 100px;
   }
