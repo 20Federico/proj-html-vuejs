@@ -1,0 +1,22 @@
+
+.btn_primary {
+  padding: 12px 38px;
+  color: white;
+  background-color: $bg_brand_primary;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+
+  &:hover {
+    background-color: $text_brand_secondary;
+  }
+}
+
+.type_h1 {
+  font-size: $font_size_h1;
+  font-family: $font_headings;
+}
+.type_h2 {
+  font-size: $font_size_h2;
+  font-family: $font_headings;
+}
