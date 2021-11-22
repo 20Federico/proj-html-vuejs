@@ -7,10 +7,9 @@
 </template>
 
 <script>
-import Footer from './components/Footer.vue'
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-//import HelloWorld from './components/HelloWorld.vue'
+import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue'
 
 export default {
   name: 'App',
@@ -24,11 +23,19 @@ export default {
 
 <style lang="scss">
 @import "@/styles/variables.scss";
+@import "@/styles/utilities.scss";
+@import "~@fontsource/open-sans/index.css";
+@import "~@fontsource/playfair-display/index.css";
 
-
+* {
+  font-family: $font_default;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: serif, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+h3 {
+  font-size: $font_size_default;
 }
 </style>

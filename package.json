@@ -9,6 +9,8 @@
     "build_push": "npm run build && git add --renormalize . && git commit -n -m \"Created/Updated build\" && git push"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.2",
+    "@fontsource/playfair-display": "^4.5.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
