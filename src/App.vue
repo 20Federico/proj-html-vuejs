@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import 'bootstrap';
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import Main from '@/components/Main.vue'
@@ -22,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap/scss/bootstrap";
 @import "@/styles/variables.scss";
 @import "@/styles/utilities.scss";
 @import "~@fontsource/open-sans/index.css";
