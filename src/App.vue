@@ -32,6 +32,10 @@ export default {
 
 * {
   font-family: $font_default;
+  font-size: $font_size_default;
+}
+ul {
+  list-style: none;
 }
 #app {
   font-family: serif, Helvetica, Arial, sans-serif;
