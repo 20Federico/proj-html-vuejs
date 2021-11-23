@@ -1,14 +1,22 @@
 <template>
   <main>
-    <MainDataTable />
+    <MainStatsTable />
+    <MainContentTable />
+    <MainSponsorTable />
   </main>
 </template>
 
 <script>
-import MainDataTable from './MainDataTable.vue'
+import MainContentTable from './MainContentTable.vue';
+import MainSponsorTable from './MainSponsorTable.vue';
+import MainStatsTable from './MainStatsTable.vue';
+
 export default {
   components: { 
-    MainDataTable 
+    MainStatsTable,
+    MainContentTable,
+    
+    MainSponsorTable 
   },
   name: "Main",
 }
