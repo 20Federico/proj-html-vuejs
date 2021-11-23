@@ -5,14 +5,16 @@
         <div class="ul_box" v-for="list, i in lists" :key="i">
           <h3 :class="i === 'empty' ? 'li_empty' : ''">{{i}}</h3>
           <ul class="m-0 p-0">
-            <li v-for="listItem, j in list" :key="j">
-              {{listItem}}
-            </li>
+            <a @click.prevent :href="listItem.href" v-for="listItem, j in list" :key="j">
+              <li>
+                {{listItem.text}}
+              </li>
+            </a>
           </ul>
         </div>
       </div>
       <div class="social_icons mb-5">
-        <a :href="social.href" v-for="social, j in socialLinks" :key="j">
+        <a @click.prevent :href="social.href" v-for="social, j in socialLinks" :key="j">
           <i :class="social.class"></i>
         </a>
       </div>
@@ -33,25 +35,64 @@ export default {
     return {
       lists: {
         Address: [
-          '382 NE 191st St # 87394 Miami, FL 33179-3899',
-          '+1(305)547-9909 (9am - 5pm EST, Monday - Friday)',
-          'support@maxcoach.com'
+          {
+            text: '382 NE 191st St # 87394 Miami, FL 33179-3899',
+            href: '#'
+          },
+          {
+            text: '+1(305)547-9909 (9am - 5pm EST, Monday - Friday)',
+            href: '#'
+          },
+          {
+            text: 'support@maxcoach.com',
+            href: '#'
+          }
         ],
         Explore: [
-          'Start here',
-          'Blog',
-          'About us'
+          {
+            text: 'Start here',
+            href: '#'
+          },
+          {
+            text: 'Blog',
+            href: '#'
+          },
+          {
+            text: 'About us',
+            href: '#'
+          }
         ],
         empty: [
-          'Success story',
-          'Courses',
-          'Contact us'
+          {
+            text: 'Success story',
+            href: '#'
+          },
+          {
+            text: 'Courses',
+            href: '#'
+          },
+          {
+            text: 'Contact us',
+            href: '#'
+          }
         ],
         Information: [
-          'Membership',
-          'Purchase guide',
-          'Privacy policy',
-          'Terms of service'
+          {
+            text: 'Membership',
+            href: '#'
+          },
+          {
+            text: 'Purchase guide',
+            href: '#'
+          },
+          {
+            text: 'Privacy policy',
+            href: '#'
+          },
+          {
+            text: 'Terms of service',
+            href: '#'
+          }
         ]
       },
       socialLinks: [
@@ -79,7 +120,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 footer {
   padding: $padding_m 0;
@@ -87,25 +127,43 @@ footer {
   color: $text_gray;
   position: relative;
 }
-h3 {
-  font-size: $font_size_default;
-  font-weight: bold;
-  color: white;
-}
-li {
-  line-height: 30px;
-  font-size: $font_size_small;
-}
-.li_empty {
-  color: transparent;
-}
 .ul_box {
   flex-shrink: 0;
   padding: 15px $padding_xl 15px 0;
-}
-.ul_box:first-of-type {
+
+  .ul_box:first-of-type {
   flex-grow: 1;
+  }
+
+  h3 {
+  font-size: $font_size_default;
+  font-weight: bold;
+  color: white;
+  }
+
+  a {
+    line-height: 30px;
+    font-size: 50px;
+    color: $text_gray;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    li {
+    font-size: $font_size_small;
+    }
+  }
+
+  li {
+  }
 }
+
+.li_empty {
+  color: transparent;
+}
+
 .social_icons {
   a {
     color: $text_gray;
