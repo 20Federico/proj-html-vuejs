@@ -36,6 +36,7 @@ export default {
 
     img {
       max-width: 100%;
+      margin-top: $padding_m;
 
       &.frontImg {
         position: relative;

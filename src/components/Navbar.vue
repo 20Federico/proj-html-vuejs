@@ -99,10 +99,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
   
-  nav {
-    margin-bottom: $padding_m;
-  }
-  
   .logo {
     width: 100px;
   }
