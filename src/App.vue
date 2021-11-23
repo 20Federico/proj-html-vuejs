@@ -34,6 +34,10 @@ export default {
   font-family: $font_default;
   font-size: $font_size_default;
 }
+img,
+button {
+  @include no_select;
+}
 ul {
   list-style: none;
 }
