@@ -1,9 +1,8 @@
 <template>
   <div class="container">
-    <div class="row row-cols-4">
-      <div class="col text-center" v-for="data, i in dataTable" :key="i">
-        <p class="data_stat">{{data.stat}}</p>
-        <p class="data_title">{{data.title.toUpperCase()}}</p>
+    <div class="row align-items-center">
+      <div class="col-2 text-center" v-for="img, i in images" :key="i">
+        <img :src="require('@/assets/' + img.src)" :alt="img.alt">
       </div>
     </div>
   </div>
@@ -14,22 +13,30 @@ export default {
   name: "MainDataTable",
   data() {
     return {
-      dataTable: [
+      images: [
         {
-          title: 'finished sessions',
-          stat: '1.926'
+          src: 'client-logo-05-primary.png',
+          alt: 'Itsalive logo'
         },
         {
-          title: 'satisfaction rate',
-          stat: '100%'
+          src: 'client-logo-06-primary.png',
+          alt: 'sixbase logo'
         },
         {
-          title: 'enrolled learners',
-          stat: '3092+'
+          src: 'client-logo-07-primary.png',
+          alt: 'nowhere famous logo'
         },
         {
-          title: 'online instructors',
-          stat: '200'
+          src: 'client-logo-04-primary.png',
+          alt: 'pencil logo'
+        },
+        {
+          src: 'client-logo-03-primary.png',
+          alt: 'brook logo'
+        },
+        {
+          src: 'client-logo-02-primary.png',
+          alt: 'tree logo'
         }
       ]
     }
@@ -41,21 +48,14 @@ export default {
 @import "@/styles/variables.scss";
 
   .container {
-    padding: $padding_l 20px;
+    padding: $padding_xl 0;
   }
-  .col {
-    border-right: 1px dashed $text_brand_primary;
-    &:first-of-type {
-      border-left: 1px dashed $text_brand_primary;
+  img {
+    opacity: .4;
+    transition: .5s;
+
+    &:hover {
+      opacity: 1;
     }
-  }
-  .data_stat {
-    font-size: $font_size_h2;
-    color: $text_brand_primary;
-    font-weight: bold;
-  }
-  .data_title {
-    color: $text_titles;
-    font-weight: bold;
   }
 </style>
