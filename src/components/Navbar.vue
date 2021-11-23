@@ -13,10 +13,9 @@
         </ul>
       </div>
       <div class="social_links">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+        <a :href="social.href" v-for="social, j in socialLinks" :key="j">
+          <i :class="social.class"></i>
+        </a>
       </div>
     </div>
   </nav>
@@ -90,6 +89,24 @@ export default {
             },
           ]
         }
+      ],
+      socialLinks: [
+        {
+          href: '#',
+          class: 'fab fa-twitter'
+        },
+        {
+          href: '#',
+          class: 'fab fa-facebook-f'
+        },
+        {
+          href: '#',
+          class: 'fab fa-instagram'
+        },
+        {
+          href: '#',
+          class: 'fab fa-linkedin'
+        }
       ]
     }
   }
@@ -119,14 +136,12 @@ export default {
     }
   }
   .social_links {
-    * {
+    
+    a {
       color: $text_titles;
-      width: 30px;
+      padding: 10px;
     }
-  }
-  
-  i {
-    color: white;
+    
   }
 
 </style>
