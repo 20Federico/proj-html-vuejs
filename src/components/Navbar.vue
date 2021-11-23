@@ -132,6 +132,9 @@ export default {
           color: $text_brand_secondary;
           text-decoration: underline;
         }
+        &:focus {
+          color: $text_brand_primary;
+        }
       }
     }
   }
