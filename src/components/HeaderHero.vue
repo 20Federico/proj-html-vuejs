@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-5">
-        <div class="p-2 me-4">
+        <div>
           <p class="text_grey">I'M WINGMAN</p>
           <p class="type_h1">Peace On Earth A Wonderful Wish But No Way</p>
           <p class="py-3">
