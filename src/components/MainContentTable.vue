@@ -62,6 +62,7 @@ export default {
 
 .imgsBox {
     position: relative;
+    transition: .3s;
 
     img {
       max-width: 100%;
@@ -75,6 +76,10 @@ export default {
       &.backImg {
         width: 100%;
       }
+    }
+
+    &:hover {
+      filter: brightness(.5);
     }
 }
 .small_text {
