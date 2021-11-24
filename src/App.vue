@@ -49,4 +49,7 @@ ul {
 h3 {
   font-size: $font_size_default;
 }
+.change_review {
+  @include no_select;
+}
 </style>
