@@ -47,6 +47,7 @@ export default {
     right: 0;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
