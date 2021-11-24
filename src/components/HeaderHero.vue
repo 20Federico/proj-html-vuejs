@@ -3,7 +3,7 @@
     <div class="row align-items-center">
       <div class="col-5">
         <div>
-          <p class="text_grey">I'M WINGMAN</p>
+          <p>I'M WINGMAN</p>
           <p class="type_h1">Peace On Earth A Wonderful Wish But No Way</p>
           <p class="py-3">
             Success isn't overnight. It's when everydayyou get a little better than the day before. It all adds up.
