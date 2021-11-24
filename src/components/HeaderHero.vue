@@ -6,7 +6,7 @@
           <p>I'M WINGMAN</p>
           <p class="type_h1">Peace On Earth A Wonderful Wish But No Way</p>
           <p class="py-3">
-            Success isn't overnight. It's when everydayyou get a little better than the day before. It all adds up.
+            Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.
           </p>
           <button type="button" class="btn_primary">Get Started For Free &nbsp; &nbsp; <i class="fas fa-long-arrow-alt-right"></i></button>
         </div>
