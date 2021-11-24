@@ -54,6 +54,7 @@ export default {
     -webkit-box-shadow: 5px 2px 15px 5px rgba(0,0,0,0.2); 
     box-shadow: 5px 2px 15px 5px rgba(0,0,0,0.2);
     transition: .5s;
+    z-index: 999;
 
     &:hover {
       transform: scale(1.2);
