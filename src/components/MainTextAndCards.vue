@@ -123,7 +123,6 @@ li.book_feature {
   top: 20%;
   right: 60px;
   display: none;
-  
 
   li {
     border-radius: 50%;
