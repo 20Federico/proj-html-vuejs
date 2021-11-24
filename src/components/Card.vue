@@ -2,7 +2,7 @@
   <div class="card">
     <img :src="require('@/assets/' + courseData.imgSrc)" class="card-img-top" :alt="courseData.imgAlt">
     <div class="card-body">
-      <h5 class="text_big text_primary fw-bold mb-3">${{courseData.priceInt}}.<span>{{courseData.priceFloats.padStart(2, 0)}}</span></h5>
+      <p class="text_big text_primary fw-bold mb-3">${{courseData.priceInt}}.<span>{{courseData.priceFloats.padStart(2, 0)}}</span></p>
       <p class="card-text mb-4">{{courseData.title}}</p>
       <div>
         <span class="card_small_text">
