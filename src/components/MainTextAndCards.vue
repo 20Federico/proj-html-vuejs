@@ -1,7 +1,7 @@
 <template>
   <div class="container d-flex justify-content-between align-items-center">
     <div class="text_container">
-      <p class="section_type">
+      <p>
         BOOK STORE ONLINE
       </p>
       <p class="type_h2 mb-5">
