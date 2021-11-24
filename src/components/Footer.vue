@@ -155,13 +155,10 @@ footer {
     font-size: $font_size_small;
     }
   }
-
-  li {
-  }
 }
 
 .li_empty {
-  color: transparent;
+  color: transparent !important;
 }
 
 .social_icons {
